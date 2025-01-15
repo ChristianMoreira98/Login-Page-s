@@ -6,6 +6,7 @@
     font-family: "Exo 2", serif;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 html {
@@ -28,6 +29,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    width: 100%;
 }
 
 .container input {
@@ -40,6 +42,11 @@ body {
 }
 
 .container p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.container label {
     font-size: 1.5rem;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -80,3 +87,71 @@ form {
     background-color: #8551ffb7;
     color: #ffffff;
 }
+
+
+@media screen and (max-width: 830px){
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+
+    .container input {
+        max-width: 200px;
+        max-height: 50px;
+        border: 2px solid rgba(128, 128, 128, 0.33);
+        border-radius: 5px;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    
+    .container label {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+.p{
+    text-align: center;
+}
+
+    .container p{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte */
+    }
+
+    .container input {
+        max-width: 200px; /* Ajusta a largura do input */
+        font-size: 1rem; /* Reduz o tamanho da fonte do input */
+    }
+
+    .container label {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do parágrafo */
+    }
+
+    .container p {
+        font-size: 0.6rem; /* Reduz o tamanho da fonte do parágrafo */
+    }
+
+h1{
+    font-size: 2.5rem;
+}
+
+    .button {
+        width: 200px; /* Ajusta a largura do botão */
+        height: 60px; /* Ajusta a altura do botão */
+        font-size: 1rem; /* Reduz o tamanho da fonte do botão */
+    }
+}
+
+
